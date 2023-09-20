@@ -2,6 +2,9 @@ API Documentation
 =================
 
 .. autosummary::
-   :toctree: autosummary
+   :recursive:
+   :caption: API Reference
+   :toctree: api/generated
+   :nosignatures:
 
-   ofe_sphinx_theme.canvas
+   ofe_sphinx_theme

@@ -15,14 +15,10 @@
 # Incase the project was not installed
 import os
 import sys
-sys.path.insert(0, os.path.abspath('..'))
-
-import ofe_sphinx_theme
-
 
 # -- Project information -----------------------------------------------------
 
-project = 'Open Free Energy Sphinx Theme'
+project = 'OpenFE Sphinx Theme'
 copyright = ("2023, Josh Mitchell. Project structure based on the "
              "Computational Molecular Science Python Cookiecutter version 1.1")
 author = 'Josh Mitchell'
@@ -57,6 +53,17 @@ napoleon_google_docstring = False
 napoleon_use_param = False
 napoleon_use_ivar = True
 
+autosummary_context = {
+    # Modules to exclude from API docs
+    "exclude_modules": [
+        "ofe_sphinx_theme.tests",
+        "ofe_sphinx_theme.data",
+    ],
+    "show_inheritance": True,
+    "show_inherited_members": False,
+    "show_undoc_members": True,
+}
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -74,7 +81,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -90,13 +97,23 @@ pygments_style = 'default'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'ofe_sphinx_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#
-# html_theme_options = {}
+
+html_theme_options = {
+    "logo": {"text": "OpenFE Theme"},
+    "icon_links": [
+        {
+            "name": "Github",
+            "url": "https://github.com/OpenFreeEnergy/openfe",
+            "icon": "fa-brands fa-square-github",
+            "type": "fontawesome",
+        }
+    ],
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

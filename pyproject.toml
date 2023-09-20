@@ -18,15 +18,16 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
 ]
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 # Declare any run-time dependencies that should be installed with the package.
-#dependencies = [
-#    "importlib-resources;python_version<'3.10'",
-#]
+dependencies = [
+   "pydata-sphinx-theme",
+   "libsass",
+]
 
 # Update the urls once the hosting is set up.
 #[project.urls]
-#"Source" = "https://github.com/<username>/ofe_sphinx_theme/"
+#"Source" = "https://github.com/openfreeenergy/ofe_sphinx_theme/"
 #"Documentation" = "https://ofe_sphinx_theme.readthedocs.io/"
 
 [project.optional-dependencies]
@@ -34,6 +35,9 @@ test = [
   "pytest>=6.1.2",
   "pytest-runner"
 ]
+
+[project.entry-points."sphinx.html_themes"]
+ofe_sphinx_theme = "ofe_sphinx_theme"
 
 [tool.setuptools]
 # This subkey is a beta stage development and keys may change in the future, see https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html for more details

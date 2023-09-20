@@ -1,0 +1,61 @@
+/* NavBar */
+.bd-page-width {
+    max-width: calc(1500px + var(--pst-sidebar-secondary));
+}
+.navbar img{
+    border: 0px;
+}
+.nav-item.current.active .nav-link:hover {
+    text-decoration: none;
+    color: var(--pst-color-primary);
+    font-weight: 600;
+}
+
+img {
+    border: 2px solid var(--ofe-color-BeastlyGrey);
+    background: var(--ofe-color-SandySergio);
+}
+
+/* Remove underlines from links */
+a:not(:hover) {
+    text-decoration: none;
+}
+
+
+/*
+Links bar at top of notebooks
+*/
+.ofe-top-of-notebook {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Move break points for secondary sidebar and search button
+*/
+@media (max-width: 1500px) {
+  .bd-sidebar-secondary {
+    flex-grow: .75;
+    height: 100vh;
+    margin-right: -75%;
+    max-height: 100vh;
+    max-width: 350px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: visibility .2s ease-out,margin .2s ease-out;
+    visibility: hidden;
+    width: 75%;
+    z-index: 1055;
+    font-size: var(--pst-sidebar-font-size-mobile);
+  }
+
+  .search-button-field .search-button__kbd-shortcut
+  {
+    display: none;
+  }
+}
