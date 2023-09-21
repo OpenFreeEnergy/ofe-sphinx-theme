@@ -1,5 +1,8 @@
-API Documentation
-=================
+Reference
+=========
+
+API Reference
+-------------
 
 .. autosummary::
    :recursive:

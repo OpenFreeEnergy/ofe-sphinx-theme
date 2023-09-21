@@ -10,8 +10,8 @@ Welcome to Open Free Energy Sphinx Theme's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   getting_started
-   api
+   installation
+   reference
 
 
 
