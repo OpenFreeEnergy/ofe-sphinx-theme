@@ -11,3 +11,20 @@ html {
     --pst-font-family-monospace: 'Fira Mono', var(--pst-font-family-monospace-system);
     --pst-font-weight-monospace: 400;
 }
+
+// Make more headings use heading font settings
+.toctree-wrapper p.caption,
+.prev-next-area a .prev-next-info .prev-next-subtitle,
+p.rubric
+{
+    font-family: var(--pst-font-family-heading);
+    font-weight: var(--pst-font-weight-heading);
+}
+
+p.rubric {
+    font-size: var(--pst-font-size-h4);
+}
+
+.prev-next-area a .prev-next-info .prev-next-subtitle {
+    font-size: var(--pst-font-size-h6);
+}

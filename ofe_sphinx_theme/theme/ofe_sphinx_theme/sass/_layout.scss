@@ -17,10 +17,18 @@ img {
 }
 
 /* Remove underlines from links */
-a:not(:hover) {
+a:not(:hover) * {
     text-decoration: none;
 }
 
+.prev-next-area a {
+    code {
+        color: var(--pst-color-inline-code-links);
+    }
+    p.prev-next-title {
+        text-decoration: none;
+    }
+}
 
 /*
 Links bar at top of notebooks
