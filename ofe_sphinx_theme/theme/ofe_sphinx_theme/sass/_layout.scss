@@ -16,6 +16,29 @@ img {
     background: var(--ofe-color-SandySergio);
 }
 
+.navbar .btn {
+    transition: 100ms all;
+    &:hover {
+        color: var(--pst-color-link-hover);
+    }
+
+    &.search-button-field {
+        &:hover, &:not(:hover) {
+            border: none;
+        }
+        outline: 1px solid var(--pst-color-border);
+        &:hover {
+            outline: 2px solid var(--pst-color-link-hover);
+
+            kbd {
+                border-color: var(--pst-color-link-hover);
+                color: var(--pst-color-link-hover);
+            }
+        }
+        background-color: var(--ofe-color-BadassBlue);
+    }
+}
+
 /* Remove underlines from links */
 a:not(:hover) * {
     text-decoration: none;

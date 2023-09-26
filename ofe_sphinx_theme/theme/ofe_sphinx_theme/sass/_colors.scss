@@ -15,12 +15,13 @@ html{
     --ofe-color-BeastlyLightGrey: #464545;
 }
 
+// Dark and light themes
 @mixin dark_theme {
     // Colors come from the OFE color palette
     // or the default PyData colour scheme
     --pst-color-primary: var(--ofe-color-SergiosCousin);
     --pst-color-primary-text: var(--ofe-color-OtherBlue);
-    --pst-color-primary-highlight: #306e81;
+    --pst-color-primary-highlight: var(--ofe-color-SandySergio);
     --pst-color-secondary: #ee9040;
     --pst-color-secondary-text: #fff;
     --pst-color-secondary-highlight: #cf6912;
@@ -117,17 +118,18 @@ html{
     --pst-color-inline-code-links: var(--pst-color-link);
 }
 
-nav.bd-header.navbar {
-    @include dark_theme();
-    --pst-color-on-background: var(--ofe-color-BadassBlue);
-}
-
 html[data-theme=light]{
     @include light_theme();
 }
 
 html[data-theme=dark] {
     @include dark_theme();
+}
+
+// Navbar is always dark with custom background color
+nav.bd-header.navbar {
+    @include dark_theme();
+    --pst-color-on-background: var(--ofe-color-BadassBlue);
 }
 
 // Set Sphinx Design colors to corresponding PyData theme colors
