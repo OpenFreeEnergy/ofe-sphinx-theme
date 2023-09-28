@@ -2,6 +2,7 @@
 
 # Add imports here
 from pathlib import Path
+from typing import Optional
 
 from sphinx.application import Sphinx
 from sphinx.config import Config
@@ -17,7 +18,7 @@ def html_theme_path() -> Path:
     return here / "theme" / "ofe_sphinx_theme"
 
 
-def compile_css(app: Sphinx, exception: Exception | None):
+def compile_css(app: Sphinx, exception: Optional[Exception]):
     """Compile SASS into CSS"""
     if exception is not None:
         return
