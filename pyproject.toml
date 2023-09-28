@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 # Self-descriptive entries which should always be present
 # https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
 [project]
-name = "ofe_sphinx_theme"
+name = "ofe-sphinx-theme"
 description = "Sphinx theme for Open Free Energy software based on the PyData theme."
 dynamic = ["version"]
 readme = "README.md"
@@ -21,7 +21,7 @@ classifiers = [
 requires-python = ">=3.10"
 # Declare any run-time dependencies that should be installed with the package.
 dependencies = [
-   "pydata-sphinx-theme",
+   "pydata-sphinx-theme==0.14.*",
    "libsass",
 ]
 
