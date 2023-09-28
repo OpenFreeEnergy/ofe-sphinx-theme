@@ -11,6 +11,7 @@ Welcome to Open Free Energy Sphinx Theme's documentation!
    :caption: Contents:
 
    installation
+   guide
    reference
 
 
