@@ -113,6 +113,10 @@ html_theme_options = {
             "type": "fontawesome",
         }
     ],
+    # "DarkGoldenYellow", "FeelingSpicy", "FeelingSick", "FeelingFabulous",
+    # "FeelingBlue", or a 2-tuple (for light and dark mode respectively) of CSS
+    #  colors as strings
+    "accent_color": "FeelingBlue",
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
