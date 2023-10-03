@@ -12,7 +12,7 @@
    {%- set included_modules = [] -%}
    {%- for item in modules -%}
       {%- if item not in exclude_modules -%}
-         {{ included_modules.append(item) }}
+         {%- set _ = included_modules.append(item) -%}
       {%- endif -%}
    {%- endfor -%}
 
