@@ -6,6 +6,9 @@
 {% block base %}
 
 .. automodule:: {{ fullname }}
+   :no-members:
+   :no-inherited-members:
+   :no-special-members:
 
    {% block modules %}
 
