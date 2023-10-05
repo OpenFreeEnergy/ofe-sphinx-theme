@@ -32,11 +32,25 @@ def compile_css(app: Sphinx, exception: Optional[Exception]):
         "accent_color", "DarkGoldenYellow"
     )
     accent_color, accent_color_darkmode = {
-        "DarkGoldenYellow": (SassColor(201, 162, 57, 1), SassColor(201, 162, 57, 1)),
-        "FeelingSpicy": (SassColor(184, 87, 65, 1), SassColor(197, 109, 89, 1)),
-        "FeelingSick": (SassColor(0, 147, 132, 1), SassColor(0, 184, 165, 1)),
-        "FeelingFabulous": (SassColor(145, 55, 169, 1), SassColor(175, 86, 200, 1)),
-        "FeelingBlue": (SassColor(42, 120, 203, 1), SassColor(86, 151, 220, 1)),
+        "DarkGoldenYellow": (
+            "var(--ofe-color-DarkGoldenYellow)",
+            "var(--ofe-color-DarkGoldenYellow)",
+        ),
+        "FeelingSpicy": (
+            "var(--ofe-color-FeelingSpicy)",
+            "var(--ofe-color-FeelingSpicy-darkmode)",
+        ),
+        "FeelingSick": (
+            "var(--ofe-color-FeelingSick)",
+            "var(--ofe-color-FeelingSick-darkmode)"),
+        "FeelingFabulous": (
+            "var(--ofe-color-FeelingFabulous)",
+            "var(--ofe-color-FeelingFabulous-darkmode)",
+        ),
+        "FeelingBlue": (
+            "var(--ofe-color-FeelingBlue)",
+            "var(--ofe-color-FeelingBlue-darkmode)"
+        ),
     }.get(accent_color, accent_color)
 
     css = sass.compile(

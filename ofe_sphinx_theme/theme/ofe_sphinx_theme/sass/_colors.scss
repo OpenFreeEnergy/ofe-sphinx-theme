@@ -13,6 +13,16 @@ html{
 
     --ofe-color-SergiosBrighterCousin: #fffaf5;
     --ofe-color-BeastlyLightGrey: #464545;
+
+    --ofe-color-FeelingFabulous: #9137a9;
+    --ofe-color-FeelingBlue: #2a78cb;
+
+    // These are lighter versions of some of the above colors,
+    // for contrast with dark backgrounds.
+    --ofe-color-FeelingSpicy-darkmode: #c56d59;
+    --ofe-color-FeelingSick-darkmode: #00b8a5;
+    --ofe-color-FeelingFabulous-darkmode: #af56c8;
+    --ofe-color-FeelingBlue-darkmode: #5697dc;
 }
 
 // Dark and light themes
