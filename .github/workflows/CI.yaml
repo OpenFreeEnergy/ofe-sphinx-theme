@@ -1,8 +1,6 @@
 name: CI
 
 on:
-  # GitHub has started calling new repo's first branch "main" https://github.com/github/renaming
-  # The cookiecutter uses the "--initial-branch" flag when it runs git-init
   push:
     branches:
       - "main"
@@ -10,55 +8,54 @@ on:
     branches:
       - "main"
   schedule:
-    # Weekly tests run on main by default:
-    #   Scheduled workflows run on the latest commit on the default or base branch.
-    #   (from https://help.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events-schedule)
-    - cron: "0 0 * * 0"
+    - cron: "0 7 * * 0"
+  workflow_dispatch:
+
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+
+defaults:
+  run:
+    shell: bash
+
 
 jobs:
-  test:
+  build_tests:
+    if: "github.repository == 'OpenFreeeEnergy/ofe-sphinx-theme'"
     name: Test on ${{ matrix.os }}, Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [macOS-latest, ubuntu-latest, windows-latest]
-        python-version: [3.8, 3.9, "3.10"]
+        python-version:
+          - "3.9"
+          - "3.10"
+          - "3.11"
+          - "3.12"
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Additional info about the build
-        shell: bash
-        run: |
-          uname -a
-          df -h
-          ulimit -a
-
-      # More info on options: https://github.com/marketplace/actions/provision-with-micromamba
-      - uses: mamba-org/provision-with-micromamba@main
+      - uses: actions/setup-python@v5
         with:
-          environment-file: devtools/conda-envs/test_env.yaml
-          environment-name: test
-          channels: conda-forge,defaults
-          extra-specs: |
-            python=${{ matrix.python-version }}
+          python-version: ${{ matrix.python-version }}
 
-      - name: Install package
-        # conda setup requires this special shell
-        shell: bash -l {0}
+      - name: build package
         run: |
-          python -m pip install . --no-deps
-          micromamba list
+          pipx run build
 
-      - name: Run tests
-        # conda setup requires this special shell
-        shell: bash -l {0}
+      - name: twine check
         run: |
-          pytest -v --cov=ofe_sphinx_theme --cov-report=xml --color=yes ofe_sphinx_theme/tests/
+          pipx run twine check --strict ./dist/*tar.gz
 
-      - name: CodeCov
-        uses: codecov/codecov-action@v1
-        with:
-          file: ./coverage.xml
-          flags: unittests
-          name: codecov-${{ matrix.os }}-py${{ matrix.python-version }}
+      - name: pip check
+        run: |
+          pip install -e .
+          pip check
+
+      - name: import check
+        run: |
+          python -Ic "import ofe_sphinx_theme; print(ofe_sphinx_theme.__version__)"

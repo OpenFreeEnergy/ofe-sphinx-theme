@@ -9,7 +9,7 @@ Sphinx theme for Open Free Energy software based on the PyData theme.
 
 ### Copyright
 
-Copyright (c) 2024, Open Free Energy
+Copyright (c) 2023, Open Free Energy
 
 
 #### Acknowledgements
