@@ -9,7 +9,10 @@ from sphinx.config import Config
 import sass
 from sass import SassColor
 
-from ._version import __version__
+from importlib.metadata import version
+
+
+__version__ = version('ofe_sphinx_theme')
 
 
 def html_theme_path() -> Path:
