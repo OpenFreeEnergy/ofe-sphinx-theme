@@ -10,7 +10,7 @@ description = "Sphinx theme for Open Free Energy software based on the PyData th
 dynamic = ["version"]
 readme = "README.md"
 authors = [
-    { name = "Josh Mitchell", email = "josh.mitchell@omsf.io" }
+    { name = "The OpenFE developers", email = "openfreeenergy@omsf.io" }
 ]
 license = { text = "MIT" }
 # See https://pypi.org/classifiers/
