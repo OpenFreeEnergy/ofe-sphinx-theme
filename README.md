@@ -9,10 +9,12 @@ Sphinx theme for Open Free Energy software based on the PyData theme.
 
 ### Copyright
 
-Copyright (c) 2023, Josh Mitchell
+Copyright (c) 2024, Open Free Energy
 
 
 #### Acknowledgements
+
+OpenFE is an [Open Molecular Software Foundation](https://omsf.io/) hosted project.
  
 Project based on the 
 [Computational Molecular Science Python Cookiecutter](https://github.com/molssi/cookiecutter-cms) version 1.1.
