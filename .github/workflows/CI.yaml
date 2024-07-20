@@ -24,7 +24,7 @@ defaults:
 
 jobs:
   build_tests:
-    if: "github.repository == 'OpenFreeeEnergy/ofe-sphinx-theme'"
+    if: "github.repository == 'OpenFreeEnergy/ofe-sphinx-theme'"
     name: Test on ${{ matrix.os }}, Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     strategy:
