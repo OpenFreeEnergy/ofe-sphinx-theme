@@ -43,6 +43,7 @@ jobs:
       - name: Checkout openfe
         uses: actions/checkout@v4
         with:
+          repository: OpenFreeEnergy/openfe
           path: openfe
 
       - name: Install OpenFE Doc Env
