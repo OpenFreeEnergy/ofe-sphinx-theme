@@ -52,6 +52,12 @@ jobs:
           create-args: >-
             python=${{ matrix.python-version }}
 
+      - name: Debug paths
+        run: |
+          ls -l ofe
+          ls -l openfe
+          ls -l 
+
       - name: Install ofe-sphinx-theme
         run: python -m pip install -e ofe/
 
