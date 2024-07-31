@@ -55,7 +55,7 @@ jobs:
       - name: Install OpenFE Doc Env
         uses: mamba-org/setup-micromamba@v1
         with:
-          environment-file: openfe/docs/environment.yml
+          environment-file: openfe/docs/environment.yaml
           environment-name: test-env
           create-args: >-
             python=${{ matrix.python-version }}
