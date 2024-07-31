@@ -50,6 +50,7 @@ jobs:
         uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: openfe/docs/environment.yml
+          environment-name: test-env
           create-args: >-
             python=${{ matrix.python-version }}
 
