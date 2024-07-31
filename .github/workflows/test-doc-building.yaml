@@ -46,6 +46,12 @@ jobs:
           repository: OpenFreeEnergy/openfe
           path: openfe
 
+      - name: Debug paths
+        run: |
+          ls -l ofe
+          ls -l openfe
+          ls -l 
+
       - name: Install OpenFE Doc Env
         uses: mamba-org/setup-micromamba@v1
         with:
@@ -53,12 +59,6 @@ jobs:
           environment-name: test-env
           create-args: >-
             python=${{ matrix.python-version }}
-
-      - name: Debug paths
-        run: |
-          ls -l ofe
-          ls -l openfe
-          ls -l 
 
       - name: Install ofe-sphinx-theme
         run: python -m pip install -e ofe/
