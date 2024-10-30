@@ -56,9 +56,6 @@ include-package-data = true
 namespaces = true
 where = ["."]
 
-[tool.setuptools.packages.package-data]
-ofe_sphinx_theme = ["data/*", "theme/*"]
-
 [tool.versioningit]
 default-version = "1+unknown"
 
