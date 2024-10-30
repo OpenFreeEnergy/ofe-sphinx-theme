@@ -50,7 +50,7 @@ jobs:
         run: |
           # Remove the version we pulled in from the env and test
           # the version on this PR
-          micromamba remove --force ofe-sphinx-theme --yes 
+          pip uninstall ofe-sphinx-theme --yes
           python -m pip install ofe/
 
       - name: Install openfe
