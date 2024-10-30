@@ -18,7 +18,7 @@ __version__ = version('ofe_sphinx_theme')
 def html_theme_path() -> Path:
     """The path to the theme itself."""
     here = Path(__file__).parent.resolve()
-    return here
+    return here / "theme" / "ofe_sphinx_theme"
 
 
 def compile_css(app: Sphinx, exception: Optional[Exception]):
