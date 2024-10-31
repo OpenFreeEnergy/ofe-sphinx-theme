@@ -1,0 +1,60 @@
+name: Test openfe doc building
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+  schedule:
+    - cron: "0 7 * * 0"
+  workflow_dispatch:
+
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+
+defaults:
+  run:
+    shell: bash -leo pipefail {0}
+
+
+jobs:
+  build_tests:
+    if: "github.repository == 'OpenFreeEnergy/ofe-sphinx-theme'"
+    name: Test Downstream Doc Building
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout ofe-sphinx-theme
+        uses: actions/checkout@v4
+        with:
+          path: ofe
+
+      - name: Checkout openfe
+        uses: actions/checkout@v4
+        with:
+          repository: OpenFreeEnergy/openfe
+          path: openfe
+
+      - name: Install OpenFE Doc Env
+        uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-file: openfe/docs/environment.yaml
+          environment-name: test-env
+
+      - name: Install ofe-sphinx-theme
+        run: |
+          # Remove the version we pulled in from the env and test
+          # the version on this PR
+          python -m pip uninstall ofe-sphinx-theme --yes
+          python -m pip install ofe/
+
+      - name: Install openfe
+        run: python -m pip install --no-deps openfe/
+
+      - name: Build the docs
+        run:  python -m sphinx -T -W --keep-going -b html -d _build/doctrees -D language=en openfe/docs/ build_output/html 
