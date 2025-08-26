@@ -21,7 +21,7 @@ classifiers = [
 requires-python = ">=3.9"
 # Declare any run-time dependencies that should be installed with the package.
 dependencies = [
-   "pydata-sphinx-theme==0.14.*",
+   "pydata-sphinx-theme==0.16.*",
    "libsass",
 ]
 
