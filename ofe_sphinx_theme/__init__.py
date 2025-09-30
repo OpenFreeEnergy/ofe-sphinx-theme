@@ -54,7 +54,7 @@ def compile_css(app: Sphinx, exception: Optional[Exception]):
             "var(--ofe-color-FeelingBlue)",
             "var(--ofe-color-FeelingBlue-darkmode)"
         ),
-        "CantinaPurple": (
+        "cantina-purple": (
             "var(--ofe-color-cantina-purple)",
             "var(--ofe-color-cantina-purple)"
         ),
