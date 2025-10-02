@@ -1,89 +1,77 @@
 // OFE color palette
-html{
-    --ofe-color-BadassBlue: #31394d;
-    --ofe-color-OtherBlue: #002f4a;
-    --ofe-color-SandySergio: #d9c4b1;
-    --ofe-color-SergiosCousin: #ede3da;
-    --ofe-color-FeelingSpicy: #b85741;
-    --ofe-color-FeelingSick: #009384;
-    --ofe-color-BeastlyGrey: #666666;
-
-    --ofe-color-GoldenYellow: #EEC044FF;
-    --ofe-color-DarkGoldenYellow: #c9a239;
-
-    --ofe-color-SergiosBrighterCousin: #fffaf5;
-    --ofe-color-BeastlyLightGrey: #464545;
-
-    --ofe-color-FeelingFabulous: #9137a9;
-    --ofe-color-FeelingBlue: #2a78cb;
-
-    // These are lighter versions of some of the above colors,
-    // for contrast with dark backgrounds.
-    --ofe-color-FeelingSpicy-darkmode: #c56d59;
-    --ofe-color-FeelingSick-darkmode: #00b8a5;
-    --ofe-color-FeelingFabulous-darkmode: #af56c8;
-    --ofe-color-FeelingBlue-darkmode: #5697dc;
+html {
+    --ofe-color-midnight-purple: #3f033b ;
+    --ofe-color-baja-teal: #00bdaa;
+    --ofe-color-cantina-purple: #8a2283;
+    --ofe-color-pale-purple: #eedfed;
+    --ofe-color-queso-orange: #f29727;
+    --ofe-color-diablo-red: #b00020;
+    --ofe-color-darkest-grey: #121212;
+    --ofe-color-beastly-grey: #666666;
+    --ofe-color-light-grey: #a5a5a5;
+    --ofe-color-lightest-grey: #f3f3f3;
+    --ofe-color-not-quite-black: #270224;
 }
 
-// Dark and light themes
-@mixin dark_theme {
-    --ofe-color-accent: #{accent_color_darkmode()};
-    // Colors come from the OFE color palette
-    // or the default PyData colour scheme
-    --pst-color-primary: var(--ofe-color-SergiosCousin);
-    --pst-color-primary-text: var(--ofe-color-OtherBlue);
-    --pst-color-primary-highlight: var(--ofe-color-SandySergio);
-    --pst-color-secondary: var(--ofe-color-accent);
-    --pst-color-secondary-text: #fff;
-    --pst-color-secondary-highlight: #cf6912;
-    --pst-color-success: #488757;
-    --pst-color-success-text: #fff;
-    --pst-color-success-highlight: #2d5537;
-    --pst-color-info: #459db9;
-    --pst-color-info-text: #fff;
-    --pst-color-info-highlight: #306e81;
-    --pst-color-warning: #ee9040;
-    --pst-color-warning-text: #fff;
-    --pst-color-warning-highlight: #cf6912;
-    --pst-color-danger: #cb4653;
-    --pst-color-danger-text: #fff;
-    --pst-color-danger-highlight: #992b36;
-    --pst-color-light: #c9c9c9;
-    --pst-color-light-text: #000;
-    --pst-color-light-highlight: #a3a3a3;
-    --pst-color-muted: #a6a6a6;
-    --pst-color-muted-text: #fff;
-    --pst-color-muted-highlight: gray;
-    --pst-color-dark: #cecece;
-    --pst-color-dark-text: #000;
-    --pst-color-dark-highlight: #a8a8a8;
-    --pst-color-black: #000;
-    --pst-color-black-text: #fff;
-    --pst-color-black-highlight: #000;
-    --pst-color-white: #fff;
-    --pst-color-white-text: #000;
-    --pst-color-white-highlight: #d9d9d9;
-    --pst-color-attention: var(--ofe-color-FeelingSpicy);
-    --pst-color-text-base: var(--ofe-color-SergiosBrighterCousin);
-    --pst-color-text-muted: var(--ofe-color-SandySergio);
-    --pst-color-shadow: #212121;
-    --pst-color-border: silver;
-    --pst-color-inline-code: var(--ofe-color-SergiosCousin);
-    --pst-color-target: var(--pst-color-info-highlight);
-    --pst-color-background: #1d222d;
-    --pst-color-on-background: #1e1e1e;
-    --pst-color-surface: #666666;
-    --pst-color-on-surface: #373737;
-    --pst-color-link: var(--ofe-color-accent);
-    --pst-color-link-hover: var(--pst-color-link);
-    --pst-color-inline-code-links: var(--pst-color-link);
-}
+// // Dark and light themes
+// @mixin dark_theme {
+//     --ofe-color-accent: #{accent_color_darkmode()};
+//     // Colors come from the OFE color palette
+//     // or the default PyData colour scheme
+//     --pst-color-primary: var(--ofe-color-SergiosCousin);
+//     --pst-color-primary-text: var(--ofe-color-OtherBlue);
+//     --pst-color-primary-highlight: var(--ofe-color-SandySergio);
+//     --pst-color-secondary: var(--ofe-color-accent);
+//     --pst-color-secondary-text: #fff;
+//     --pst-color-secondary-highlight: #cf6912;
+//     --pst-color-success: #488757;
+//     --pst-color-success-text: #fff;
+//     --pst-color-success-highlight: #2d5537;
+//     --pst-color-info: #459db9;
+//     --pst-color-info-text: #fff;
+//     --pst-color-info-highlight: #306e81;
+//     --pst-color-warning: #ee9040;
+//     --pst-color-warning-text: #fff;
+//     --pst-color-warning-highlight: #cf6912;
+//     --pst-color-danger: #cb4653;
+//     --pst-color-danger-text: #fff;
+//     --pst-color-danger-highlight: #992b36;
+//     --pst-color-light: #c9c9c9;
+//     --pst-color-light-text: #000;
+//     --pst-color-light-highlight: #a3a3a3;
+//     --pst-color-muted: #a6a6a6;
+//     --pst-color-muted-text: #fff;
+//     --pst-color-muted-highlight: gray;
+//     --pst-color-dark: #cecece;
+//     --pst-color-dark-text: #000;
+//     --pst-color-dark-highlight: #a8a8a8;
+//     --pst-color-black: #000;
+//     --pst-color-black-text: #fff;
+//     --pst-color-black-highlight: #000;
+//     --pst-color-white: #fff;
+//     --pst-color-white-text: #000;
+//     --pst-color-white-highlight: #d9d9d9;
+//     --pst-color-attention: var(--ofe-color-FeelingSpicy);
+//     --pst-color-text-base: var(--ofe-color-SergiosBrighterCousin);
+//     --pst-color-text-muted: var(--ofe-color-SandySergio);
+//     --pst-color-shadow: #212121;
+//     --pst-color-border: silver;
+//     --pst-color-inline-code: var(--ofe-color-SergiosCousin);
+//     --pst-color-target: var(--pst-color-info-highlight);
+//     --pst-color-background: #1d222d;
+//     --pst-color-on-background: #1e1e1e;
+//     --pst-color-surface: #666666;
+//     --pst-color-on-surface: #373737;
+//     --pst-color-link: var(--ofe-color-accent);
+//     --pst-color-link-hover: var(--pst-color-link);
+//     --pst-color-inline-code-links: var(--pst-color-link);
+// }
 
 @mixin light_theme {
     --ofe-color-accent: #{accent_color()};
-    --pst-color-primary: var(--ofe-color-OtherBlue);
-    --pst-color-primary-text: var(--ofe-color-SandySergio);
-    --pst-color-primary-highlight: var(--ofe-color-SergiosCousin);
+    --pst-color-primary: var(--ofe-color-cantina-purple);
+    --pst-color-primary-text: var(--ofe-color-light-grey);
+    --pst-color-primary-highlight: var(--ofe-color-lightest-grey);
     --pst-color-secondary: var(--ofe-color-accent);
     --pst-color-secondary-text: #fff;
     --pst-color-secondary-highlight: #cf6912;
@@ -114,19 +102,19 @@ html{
     --pst-color-white: #fff;
     --pst-color-white-text: #000;
     --pst-color-white-highlight: #d9d9d9;
-    --pst-color-attention: var(--ofe-color-GoldenYellow);
-    --pst-color-text-base: var(--ofe-color-OtherBlue);
-    --pst-color-text-muted: var(--ofe-color-BadassBlue);
+    --pst-color-attention: var(--ofe-color-queso-orange);
+    --pst-color-text-base: var(--ofe-color-not-quite-black);
+    --pst-color-text-muted: var(--ofe-color-midnight-purple);
     --pst-color-shadow: #d8d8d8;
     --pst-color-border: #c9c9c9;
-    --pst-color-inline-code: var(--ofe-color-FeelingSick);
+    --pst-color-inline-code: var(--ofe-color-baja-teal);
     --pst-color-target: var(--pst-color-info);
-    --pst-color-background: var(--ofe-color-SergiosBrighterCousin);
-    --pst-color-on-background: #fff;
+    --pst-color-background:#fff;
+    --pst-color-on-background:var(--ofe-color-lightest-grey);
     --pst-color-surface: #f5f5f5;
     --pst-color-on-surface: #e1e1e1;
     --pst-color-link: var(--ofe-color-accent);
-    --pst-color-link-hover: var(--pst-color-link);
+    --pst-color-link-hover: var(--ofe-color-baja-teal);
     --pst-color-inline-code-links: var(--pst-color-link);
 }
 
@@ -135,14 +123,9 @@ html[data-theme=light]{
 }
 
 html[data-theme=dark] {
-    @include dark_theme();
+    @include light_theme();  // TODO: add dark theme with new branding
 }
 
-// Navbar is always dark with custom background color
-nav.bd-header.navbar {
-    @include dark_theme();
-    --pst-color-on-background: var(--ofe-color-BadassBlue);
-}
 
 // Set Sphinx Design colors to corresponding PyData theme colors
 html {

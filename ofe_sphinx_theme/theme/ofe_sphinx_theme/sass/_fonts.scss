@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Fira+Mono:wght@400;500;700&family=Montserrat&display=swap');
+@import url(https://rsms.me/inter/inter.css);
+
+:root { font-family: Inter, serif; }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, serif; }
+}
 
 html {
-    --pst-font-family-base: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+    --pst-font-family-base: Inter, serif ;
     --pst-font-weight-base: 300;
 
-    // --pst-font-family-heading: "EB Garamond", serif;
-    --pst-font-family-heading: "Montserrat", sans-serif;
+    --pst-font-family-heading: Inter, serif;
     --pst-font-weight-heading: 400;
 
     --pst-font-family-monospace: 'Fira Mono', var(--pst-font-family-monospace-system);
