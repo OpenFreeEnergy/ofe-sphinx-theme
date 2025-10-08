@@ -37,7 +37,7 @@ def compile_css(app: Sphinx, exception: Optional[Exception]):
     accent_color, accent_color_darkmode = {
         "cantina-purple": (
             "var(--ofe-color-cantina-purple)",
-            "var(--ofe-color-darkmode-teal)",
+            "var(--ofe-color-darkmode-purple)",
         ),
     }.get(accent_color, accent_color)
 
