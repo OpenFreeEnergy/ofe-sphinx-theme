@@ -14,6 +14,7 @@ html {
     --ofe-color-light-grey: #d5d5d5;
     --ofe-color-lightest-grey: #f3f3f3;
     --ofe-color-not-quite-black: #270224;
+    --ofe-color-search-highlight: #96b8c4
 }
 
 // Dark and light themes
@@ -30,9 +31,9 @@ html {
     // --pst-color-success: #228a67;
     // --pst-color-success-text: #fff;
     // --pst-color-success-highlight: #2d5537;
-    // --pst-color-info: #459db9;
+    --pst-color-info: var(--ofe-color-search-highlight);
     // --pst-color-info-text: #fff;
-    // --pst-color-info-highlight: #306e81;
+    --pst-color-info-highlight: var(--ofe-color-search-highlight);
     // --pst-color-warning: #ee9040;
     // --pst-color-warning-text: #fff;
     // --pst-color-warning-highlight: #cf6912;
@@ -60,7 +61,7 @@ html {
     // --pst-color-shadow: var(--ofe-color-darkest-grey);
     // --pst-color-border: silver;
     // --pst-color-inline-code: var(--ofe-color-lightest-grey);
-    // --pst-color-target: var(--pst-color-info-highlight);
+    --pst-color-target: var(--pst-color-info-highlight);
     // --pst-color-background: var(--ofe-color-darkest-grey);
     // --pst-color-on-background: var(--ofe-color-dark-grey);
     // --pst-color-surface: var(--ofe-color-dark-grey);
@@ -81,9 +82,9 @@ html {
     --pst-color-success: #228a67;
     --pst-color-success-text: #fff;
     --pst-color-success-highlight: #19692c;
-    --pst-color-info: #459db9;
+    --pst-color-info: var(--ofe-color-search-highlight);
     --pst-color-info-text: #fff;
-    --pst-color-info-highlight: #306e81;
+    --pst-color-info-highlight: var(--ofe-color-search-highlight);
     --pst-color-warning: #ee9040;
     --pst-color-warning-text: #fff;
     --pst-color-warning-highlight: #cf6912;
