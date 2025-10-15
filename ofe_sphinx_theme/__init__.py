@@ -35,28 +35,9 @@ def compile_css(app: Sphinx, exception: Optional[Exception]):
         "accent_color", "DarkGoldenYellow"
     )
     accent_color, accent_color_darkmode = {
-        "DarkGoldenYellow": (
-            "var(--ofe-color-DarkGoldenYellow)",
-            "var(--ofe-color-DarkGoldenYellow)",
-        ),
-        "FeelingSpicy": (
-            "var(--ofe-color-FeelingSpicy)",
-            "var(--ofe-color-FeelingSpicy-darkmode)",
-        ),
-        "FeelingSick": (
-            "var(--ofe-color-FeelingSick)",
-            "var(--ofe-color-FeelingSick-darkmode)"),
-        "FeelingFabulous": (
-            "var(--ofe-color-FeelingFabulous)",
-            "var(--ofe-color-FeelingFabulous-darkmode)",
-        ),
-        "FeelingBlue": (
-            "var(--ofe-color-FeelingBlue)",
-            "var(--ofe-color-FeelingBlue-darkmode)"
-        ),
         "cantina-purple": (
             "var(--ofe-color-cantina-purple)",
-            "var(--ofe-color-cantina-purple)"
+            "var(--ofe-color-darkmode-purple)",
         ),
     }.get(accent_color, accent_color)
 
