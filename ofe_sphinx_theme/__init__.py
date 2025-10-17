@@ -32,7 +32,7 @@ def compile_css(app: Sphinx, exception: Optional[Exception]):
     dest.parent.mkdir(exist_ok=True, parents=True)
 
     accent_color = app.config["html_theme_options"].get(
-        "accent_color", "DarkGoldenYellow"
+        "accent_color", "cantina-purple"
     )
     accent_color, accent_color_darkmode = {
         "cantina-purple": (
