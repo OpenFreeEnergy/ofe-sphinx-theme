@@ -19,9 +19,9 @@ import sys
 # -- Project information -----------------------------------------------------
 
 project = 'OpenFE Sphinx Theme'
-copyright = ("2023, Josh Mitchell. Project structure based on the "
+copyright = ("2023, Ashley Mitchell. Project structure based on the "
              "Computational Molecular Science Python Cookiecutter version 1.1")
-author = 'Josh Mitchell'
+author = 'Ashley Mitchell'
 
 # The short X.Y version
 version = ''
