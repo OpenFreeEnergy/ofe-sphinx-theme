@@ -1,77 +1,42 @@
-# Contributor Covenant Code of Conduct
+## Code of Conduct ##
 
-## Our Pledge
+This project is dedicated to providing a welcoming and supportive environment for all people, regardless of background or identity. Members do not tolerate harassment for any reason, but especially harassment based on gender, sexual orientation, disability, physical appearance, body size, race, nationality, sex, color, ethnic or social origin, pregnancy, citizenship, familial status, veteran status, genetic information, religion or belief, political or any other opinion, membership of a national minority, property, age, or preference of text editor.
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age,
-body size, disability, ethnicity, gender identity and expression, level of
-experience, nationality, personal appearance, race, religion, or sexual
-identity and orientation.
 
-## Our Standards
+### Expected Behavior ###
 
-Examples of behavior that contributes to creating a positive environment include:
+All participants in our events and communications are expected to show respect and courtesy to others. All interactions should be professional regardless of platform: either online or in-person. In order to foster a positive and professional working environment we encourage the following kinds of behaviors in all work events, activities, and platforms:
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+ * Use welcoming and inclusive language
+ * Be respectful of different viewpoints and experiences
+ * Gracefully accept constructive criticism
+ * Focus on what is best for the community
+ * Show courtesy and respect towards other community members
 
-Examples of unacceptable behavior by participants include:
+Note: See the [four social rules](https://www.recurse.com/manual#sub-sec-social-rules) for further recommendations.
 
-* The use of sexualized language or imagery and unwelcome sexual attention or advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a professional setting
+### Unacceptable Behavior ###
 
-## Our Responsibilities
+Harassment is any form of behavior intended to exclude, intimidate, or cause discomfort. Prohibited harassing behavior includes, but is not limited to:
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+* written or verbal comments which have the effect of excluding people
+* causing someone to fear for their safety, such as through stalking, following, or intimidating
+* the display of sexual or violent images
+* unwelcome sexual attention
+* non-consensual or unwelcome physical contact
+* sustained disruption of talks, events, or communications
+* incitement to violence, suicide, or self-harm
+* continuing to initiate interaction (including photography or recording) with someone after being asked to stop
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+and
 
-Moreover, project maintainers will strive to offer feedback and advice to
-ensure quality and consistency of contributions to the code.  Contributions
-from outside the group of project maintainers are strongly welcomed but the
-final decision as to whether commits are merged into the codebase rests with
-the team of project maintainers.
+* publication of private comment without consent
 
-## Scope
+This list should not be taken to be exhaustive, but rather as a guide to make it easier to enrich our community and all those in which we participate. All interactions should be professional regardless of location: Harassment is prohibited whether it occurs on or offline, and the same standards apply to both.
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an
-appointed representative at an online or offline event. Representation of a
-project may be further defined and clarified by project maintainers.
+Enforcement of this Code of Conduct will be respectful and not include any harassing behaviors.
 
-## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at 'josh.mitchell@omsf.io'. The project team will
-review and investigate all complaints, and will respond in a way that it deems
-appropriate to the circumstances. The project team is obligated to maintain
-confidentiality with regard to the reporter of an incident. Further details of
-specific enforcement policies may be posted separately.
+You deserve sincere thanks for helping to make this a welcoming, friendly community for all.
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
-
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 1.4, available at
-[http://contributor-covenant.org/version/1/4][version]
-
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
+This Code of Conduct was adapted from the [cmelab](https://github.com/cmelab/getting-started/blob/master/wiki/pages/Code_of_Conduct.md).
